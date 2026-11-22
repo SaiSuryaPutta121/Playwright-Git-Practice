@@ -1,0 +1,70 @@
+-Amazon Playwright Automation
+
+This project is created using Playwright and JavaScript as part of the automation hackathon.
+
+It covers basic shopping scenarios on Amazon.com and API testing using Swagger Petstore.
+
+--Tools Used
+- Playwright
+- JavaScript
+- Node.js
+
+-Test Scenarios
+
+=>Amazon UI Testing
+1. Verify Amazon homepage.
+2. Search for a product.
+3. Apply a filter.
+4. Verify product details.
+5. Add product to cart.
+6. Verify cart details.
+7. Proceed to checkout.
+
+=>API Testing
+1. Get pets by status.
+2. Create a new pet and verify it.
+3. Create an order and verify it.
+
+Project Structure
+- `pages` – Page Object Model files.
+- `tests/ui` – Amazon UI test cases.
+- `tests/api` – Petstore API test cases.
+
+---How to Run
+
+Install dependencies:
+
+```bash
+npm install
+```
+
+Install browser:
+
+```bash
+npx playwright install chromium
+```
+
+Run all tests:
+
+```bash
+npx playwright test
+```
+
+Run UI tests:
+
+```bash
+npx playwright test tests/ui
+```
+
+Run API tests:
+
+```bash
+npx playwright test tests/api
+```
+
+View the test report:
+
+```bash
+npx playwright show-report
+```
+
